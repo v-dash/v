@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VGAMES© Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Time Display in the upper left corner -->
+  <div class="time-display" id="timeDisplay"></div>
+
+  <!-- Calculator Box -->
+  <div class="calculator-box">
+    <!-- Calculator Screen -->
+    <div class="screen" id="screen">Welcome</div>
+
+    <!-- Calculator Buttons -->
+    <div class="buttons">
+      <button onclick="powerOn()" class="power-btn">ON</button>
+      <button onclick="powerOff()" class="power-btn">OFF</button>
+      <button onclick="clearScreen()">C</button>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('+')">+</button>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('-')">-</button>
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('*')">*</button>
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="appendValue('/')">/</button>
+      <button onclick="solveAlgebra()">Solve</button>
+    </div>
+  </div>
+
+  <!-- Algebra Solution Popup -->
+  <div id="algebraPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Solution Steps</h2>
+      <div id="solutionSteps"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+    </html>
+  
